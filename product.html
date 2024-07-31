@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico">
+    <title>MyPet</title>
+
+    <!-- Google-Font-link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap-link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Font-Awesome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- CSS-link -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        #featured>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+            background-color: black;
+        }
+
+        #featured>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a {
+            background-color: coral;
+            color: white;
+        }
+
+        .pagination a {
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-paw" id="i"></i>MyPet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i id="bar" class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- PRODUCTS -->
+        <section id="featured" class="my-5 py-5">
+            <div class="container mt-5 py-5">
+                <h2 class="font-weight-bold">Our Products</h2>
+                <hr>
+                <p>Here you can check out our new products with fair price on "MyPet"</p>
+            </div>
+            <div class="row mx-auto container">
+                <div onclick="window.location.href='singleproduct.html';"
+                    class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/duvo-plus/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">DUVO plus+ (regular menu)</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/duvo-plus/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">DUVO plus+ (variety menu)</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-felix/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA Felix - KITTEN ORIGINAL</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-felix/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA Felix - as GOOD as it LOOKS</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - KITTEN</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food6.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/purina-pro-plan/food7.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$24.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - KITTEN</h5>
+                    <h4>$13.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food6.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food7.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food8.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - MOTHER & BABYCAT</h5>
+                    <h4>$45.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food9.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - DIGESTIVE</h5>
+                    <h4>$13.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/food/royal-canin/food10.webp"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - DIGESTIVE</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food10.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - WILD ATLANTIC</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - WHOLESOME GRAINS</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - WHOLESOME GRAINS</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - FREEZE & DRIED</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - BUTCHER'S FAVORITES</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food6.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - FREEZE & DRIED</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food7.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - FREEZE & DRIED</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food8.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - FREEZE & DRIED</h5>
+                    <h4>$21.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/acana/food9.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - LIGHT & FIT</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - PUPPY</h5>
+                    <h4>$17.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ACANA - BUTCHER'S FAVORITES</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food6.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ADULT</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food7.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - MULTI CARE</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food8.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - PUPPY</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/purina-pro-plan/food9.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">PURINA PRO PLAN - ACTIVE 27/17</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (ADULT)</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (ADULT)</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (ADULT)</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (ADULT)</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (ADULT)</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food7.webp"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (JUNIOR)</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food8.webp"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (CHICKEN)</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food9.webp"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (BEEF)</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/reflex/food10.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">REFLEX Plus+ (LAMB & RICE)</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food1.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - PUPPY</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food2.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - MEDIUM</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food3.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - SMALL/PETIT</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food4.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$24.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food5.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food7.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food8.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - ADULT</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food9.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - PUPPY</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/food/royal-canin/food10.jpg"
+                        alt="food-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">ROYAL CANIN - PUPPY</h5>
+                    <h4>$31.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy1.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Toy with Exercise Balls Teaser Mouse</h5>
+                    <h4>$12.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy2.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Migipaws Cat Toy</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy3.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">21 Pcs Cat Toys for Indoor Cats</h5>
+                    <h4>$21.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy4.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Teaser Wand Ball Toy for Kitten Cats</h5>
+                    <h4>$16.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy5.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Potaroma Cat Toys 3in1</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/toys/toy6.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Scratcher Toy</h5>
+                    <h4>$11.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy1.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Dog Toys for Aggressive Chewers</h5>
+                    <h4>$9.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy2.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">DOG TOY - Food & Game together</h5>
+                    <h4>$9.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy3.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Pack of 3 chew rope toys for dogs</h5>
+                    <h4>$9.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy4.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Interactive dog toy ball</h5>
+                    <h4>$13.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy5.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Squeaky Balls for Medium Large Dogs</h5>
+                    <h4>$6.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/toys/toy6.jpg" alt="toy-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Interactive dog toy ball</h5>
+                    <h4>$13.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed1.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">20 inches Cat Bed Machine Washable</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed2.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Fostanfly Cat Cave Beds for Indoor Cats</h5>
+                    <h4>$49.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed3.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Self-Warming Cat Beds for Indoor Cats</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed4.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Bed Pet Basket Cozy Kitten</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed5.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Bed Soft Textile Cotton</h5>
+                    <h4>$24.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed6.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Bed Cave with non-collapsed</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed7.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Tunnels with Ventilated Window for Indoor Cats</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed8.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Beds for Indoor Cats Donut Bed</h5>
+                    <h4>$24.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed9.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Handmade Cat Cave</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/bed10.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Sofa Beds for Indoor Cats</h5>
+                    <h4>$24.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/cat-tree.jpg"
+                        alt="cat-tree-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Tree Large Cat Tower for Indoor Cats</h5>
+                    <h4>$25.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/cat-tree2.jpg"
+                        alt="cat-tree-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Tree for Indoor Cats Modern Cat Tree</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/cat-tree3.jpg"
+                        alt="cat-tree-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">All-in-One Cat Tower with Cat Scratching Post</h5>
+                    <h4>$26.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/cat-tree4.jpg"
+                        alt="cat-tree-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Tower with Scratching Posts and Board</h5>
+                    <h4>$26.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/cat-tree5.jpg"
+                        alt="cat-tree-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Tree Cat Tower with Sisal - Covered</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/water-food.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Outdoor Heated Cat Bowl Large Capacity</h5>
+                    <h4>$14.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/water-food2.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Stainless Steel Cat Food Bowl</h5>
+                    <h4>$19.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/cat-product/bed/water-food3.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Cat Bowl Snacker 1.5L</h5>
+                    <h4>$17.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/bed1.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Dog Beds Durable & Breathable</h5>
+                    <h4>$23.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/bed2.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Dog Beds for Large Dogs</h5>
+                    <h4>$39.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/bed3.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Washable Dog Bed Comfortable Pet Bed</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/bed5.jpg" alt="bed-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Dog Beds for Large Dogs, Rectangle Washable</h5>
+                    <h4>$35.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/water-food.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Double 850 ml Dog Bowl - Ceramic Bowl</h5>
+                    <h4>$9.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/water-food2.webp"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Basics Stainless Steel Dog Bowl</h5>
+                    <h4>$6.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/water-food3.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Folding Dog Bowls Stand</h5>
+                    <h4>$29.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/water-food4.jpg"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Food and water bowl for dog</h5>
+                    <h4>$15.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="./images/pet-product/dog-product/bed/water-food5.webp"
+                        alt="food-and-water-bowl-photo">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Adjustable Double Stand Bowl</h5>
+                    <h4>$34.99</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <!-- PAGİNATİON -->
+                <nav aria-label="...">
+                    <ul class="pagination mt-5">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <a id="foot-logo" href="#"><i class="fa-solid fa-paw"></i>MyPet</a>
+                <p class="pt-3">MyPet is the trusted pet store offering the highest quality products for your little
+                    friends. If you
+                    are looking for the best for your friends, you are in the right place!</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">Cats</a></li>
+                    <li><a href="#">Dogs</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Beds & other items</a></li>
+                    <li><a href="#">Foods</a></li>
+                    <li><a href="#">Toys</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY, AZERBAIJAN</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(994) 12-345-67-89</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>MAIL@EXAMPLE.COM</p>
+                </div>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img id="instagram-photo" class="img-fluid w-25 h-100 m-2"
+                        src="./images/pet-product/cat-product/bed/bed10.jpg" alt="photo">
+                    <img id="instagram-photo" class="img-fluid w-25 h-100 m-2"
+                        src="./images/pet-product/dog-product/toys/toy3.jpg" alt="photo">
+                    <img id="instagram-photo" class="img-fluid w-25 h-100 m-2"
+                        src="./images/pet-product/dog-product/bed/bed2.jpg" alt="photo">
+                    <img id="instagram-photo" class="img-fluid w-25 h-100 m-2"
+                        src="./images/pet-product/cat-product/toys/toy5.jpg" alt="photo">
+                    <img id="instagram-photo" class="img-fluid w-25 h-100 m-2"
+                        src="./images/pet-product/cat-product/food/duvo-plus/food2.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="./images/footer-advertising-part/payment.png" alt="payment-methods">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>Copyright © 2024. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
